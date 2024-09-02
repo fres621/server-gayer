@@ -24,4 +24,4 @@ An URL is valid when it's an HTTP(S) URL (e.g. `https://i.imgur.com/Yu6kZc5.jpg`
 
 # Valid Guilds
 
-A guild is eligible for being added if it has more than 10 000 members and Community is enabled.
+A guild is eligible for being added if it has more than 5 230 members and Community is enabled.

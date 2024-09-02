@@ -4,8 +4,10 @@ import CleanCSS from "clean-css";
 
 const css = new CleanCSS();
 
+const base = process.env.DEV ? "../" : `https://raw.githubusercontent.com/${process.env.GH_REPO}/main`;
+
 function url(url: string) {
-  return url.startsWith("icons/") ? `https://raw.githubusercontent.com/${process.env.GH_REPO}/main/${url}` : url;
+  return url.startsWith("icons/") ? `${base}/${url}` : url;
 }
 
 const outFile = "build/generated.css";

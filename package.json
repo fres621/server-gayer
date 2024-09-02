@@ -3,6 +3,7 @@
   "scripts": {
     "build": "tsc",
     "start": "tsc && cross-env GH_REPO=fres621/server-gayer node build",
+    "dev": "tsc && cross-env DEV=true node build",
     "test": "mocha"
   },
   "directories": {
