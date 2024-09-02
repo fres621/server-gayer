@@ -8,7 +8,7 @@ const servers_1 = __importDefault(require("./servers"));
 const clean_css_1 = __importDefault(require("clean-css"));
 const css = new clean_css_1.default();
 function url(url) {
-    return url.startsWith("icons/") ? `https://raw.githubusercontent.com/${process.env.GH_REPO}/${url}` : url;
+    return url.startsWith("icons/") ? `https://raw.githubusercontent.com/${process.env.GH_REPO}/main/${url}` : url;
 }
 const outFile = "build/generated.css";
 const generated = servers_1.default.map((server) => {
