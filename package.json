@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && cross-env GH_REPO=fres621/server-gayer node build",
+    "test": "mocha"
+  },
+  "directories": {
+    "test": "./test"
+  },
+  "dependencies": {
+    "clean-css": "^5.3.3",
+    "toml": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/clean-css": "^4.2.11",
+    "@types/node": "^22.5.2",
+    "ajv": "^8.17.1",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.7.3"
+  }
+}
